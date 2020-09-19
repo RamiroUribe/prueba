@@ -1,13 +1,15 @@
 print('Hola mundo')
 x=5
 y=9
+i=0
 suma=x+y
 print(suma)
 lista=[]
-lista.append(3)
-lista.append(2)
-lista.append(3)
-lista.append(4)
+for i in range(10):
+    lista.append(i)
+
+for i in range(10):
+    print(lista[i])
 lista.sort()
 
 
