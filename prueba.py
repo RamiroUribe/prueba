@@ -1,23 +1,32 @@
 i=0
 
-lista2=[]
-lista1=[]
-lista3=[]
-for i in range(4):
-    lista1.append(i)
+Tupla=(1,2,3,4,"Holi")  
+ListadeTupla= list(Tupla)
+ListadeTupla.append(69)
+print(ListadeTupla)
 
-for i in lista1:
-    print(lista1[i])
-for i in lista1:
-    z=int(input("Ingrese numero para la lista: "))
-    lista2.append(z)
+Lista=[]
+for i in ListadeTupla:
+    Lista.append(i)
 
 
-lista1.sort()
-lista2.sort()
-'''print(lista1)
-print(lista2)'''
+largo=len(ListadeTupla)
+print(largo)
 
+diccionario={
+    "hola": "Caquita seca",
+    "holi": "Caquita feliz",
+    "holiwi": "Tu mamá es el jaime"
+}
+x=diccionario.get("holi")
+diccionario["holi"]="Mojon contento"
+x=diccionario.get("holi")
 print(x)
+
+
+
+#print(lista1)
+
+#print(lista2)
 
 
