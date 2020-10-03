@@ -23,9 +23,15 @@ diccionario2={
 
 diccionario2["5"]="Nacho"
 diccionario2["6"]="Claudio"
+copiadiccionario=diccionario2.copy()    ##Metodo para copiar un diccionario
 x=diccionario2.get("2")      ##Metodo para obtener un valor del diccionario a partir de un indice
 print(diccionario2)
 diccionario2.pop("6")        ##Metodo para eliminar un valor del diccionario a partir del indice
+del diccionario2["4"]         ##Metodo para eliminar un valor del diccionario a partir del indice
+diccionario2.popitem()       ##Metodo para eliminar el ultimo valor del diccionario
+print(diccionario2)
+print(copiadiccionario)
+diccionario2.clear()         ##Metodo para eliminar todo el contenido del diccionario
 print(diccionario2)
 
 
