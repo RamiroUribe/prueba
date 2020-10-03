@@ -20,17 +20,17 @@ diccionario2={
     "4":"Rivaldo"
 }
 
-diccionario={
-    "hola": "Caquita seca",
-    "holi": "Caquita feliz",
-    "holiwi": "Tu mamá es el jaime"
-}
-x=diccionario.get("holi")
-diccionario["holi"]="Mojon contento"
-x=diccionario.get("holi")
-y=diccionario2["5"]="Caquita"
-print(x)
+
+diccionario2["5"]="Nacho"
+diccionario2["6"]="Claudio"
+x=diccionario2.get("2")      ##Metodo para obtener un valor del diccionario a partir de un indice
 print(diccionario2)
+diccionario2.pop("6")        ##Metodo para eliminar un valor del diccionario a partir del indice
+print(diccionario2)
+
+
+
+
 
 
 
