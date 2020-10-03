@@ -13,6 +13,13 @@ for i in ListadeTupla:
 largo=len(ListadeTupla)
 print(largo)
 
+diccionario2={
+    "1":"Ramiro",
+    "2":"Ricardo",
+    "3":"María",
+    "4":"Rivaldo"
+}
+
 diccionario={
     "hola": "Caquita seca",
     "holi": "Caquita feliz",
@@ -21,7 +28,10 @@ diccionario={
 x=diccionario.get("holi")
 diccionario["holi"]="Mojon contento"
 x=diccionario.get("holi")
+y=diccionario2["5"]="Caquita"
 print(x)
+print(diccionario2)
+
 
 
 
