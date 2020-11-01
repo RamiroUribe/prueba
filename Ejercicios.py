@@ -1,4 +1,10 @@
-x=2
-print("Este es un if ternario") if (x==7) else print("Este no es un if ternario")  #If ternario, recordar
+nombre=input("Ingrese nombre: ")
+apellido=input("Ingrese apellido: ")
 
-print("cacaseca")
+nombres=[]
+
+nombres.append(nombre)
+nombres.append(apellido)
+
+print(nombres)
+
