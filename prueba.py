@@ -1,48 +1,53 @@
-i=0
+def suma(valor,total):
+    return valor+total
 
-Tupla=(1,2,3,4,"Holi")  
-ListadeTupla= list(Tupla)
-ListadeTupla.append(69)
-print(ListadeTupla)
+def resta(valor,total):
+    return valor-total
 
-Lista=[]
-for i in ListadeTupla:
-    Lista.append(i)
+def producto(valor,total):
+    return valor*total
 
+def division(valor,total):
+    return total/valor
 
-largo=len(ListadeTupla)
-print(largo)
+def calculadora():
+    opc=0
+    valor=0
+    valor1=0
+    total=0
+    valor=float(input("Ingrese número 1: "))
+    while(opc==0):
+        
+        opc=input("Ingrese operación ")
+        valor1=float(input("Ingrese número 2: "))
+        ter=str(input("Ingrese = si desea terminar o 0 si desea continuar: "))
+        if(opc=='+'):
+            if(ter=='='):
+                print (suma(valor,valor1))
+                opc=1
+            else:
+                valor = suma(valor,valor1)
+                opc=0
+        if(opc=='-'):
+            if(ter=='='):
+                print(resta(valor,valor1))
+                opc=1
+            else:
+                valor=resta(valor,valor1)
+                opc=0
+        if(opc=='*'):
+            if(ter=='='):
+                print(producto(valor,valor1))
+                opc=1
+            else:
+                valor=producto(valor,valor1)
+                opc=0
+        if(opc=='/'):
+            if(ter=='='):
+                print(division(valor1,valor))
+                opc=1
+            else:
+                valor=division(valor1,valor)
+                opc=0
 
-diccionario2={
-    "1":"Ramiro",
-    "2":"Ricardo",
-    "3":"María",
-    "4":"Rivaldo"
-}
-
-
-diccionario2["5"]="Nacho"
-diccionario2["6"]="Claudio"
-copiadiccionario=diccionario2.copy()    ##Metodo para copiar un diccionario
-x=diccionario2.get("2")      ##Metodo para obtener un valor del diccionario a partir de un indice
-print(diccionario2)
-diccionario2.pop("6")        ##Metodo para eliminar un valor del diccionario a partir del indice
-del diccionario2["4"]         ##Metodo para eliminar un valor del diccionario a partir del indice
-diccionario2.popitem()       ##Metodo para eliminar el ultimo valor del diccionario
-print(diccionario2)
-print(copiadiccionario)
-diccionario2.clear()         ##Metodo para eliminar todo el contenido del diccionario
-print(diccionario2)
-
-
-
-
-
-
-
-
-#print(lista1)
-
-#print(lista2)
-
-
+calculadora()
